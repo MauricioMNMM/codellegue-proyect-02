@@ -43,7 +43,7 @@ function List(props) {
   return (
     <ul>
       {props.items.map((item) => {
-        return <li>{item}</li>;
+        return <li key={item}>{item}</li>;
       })}
     </ul>
   );
